@@ -5,8 +5,8 @@ import Sidebar from './../../components/Sidebar/index';
 const HomePage = () => {
 
     useEffect(() => {
-        document.title = "Astrumingram";
-    }, [])
+        document.title = "My Instagram";
+    }, []);
 
     return (
         <div className="bg-gray-background mt-20 ">

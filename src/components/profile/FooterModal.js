@@ -91,7 +91,7 @@ const FooterModal = ({ post, setPost }) => {
                 </div>
             </div>
             <div className="ml-2 my-2">
-                <div className="flex">
+                <div className="flex ">
                     <p className="font-bold">
                         {likes === 1 ? `${likes} like` : `${likes} likes`}
                     </p>
@@ -139,7 +139,7 @@ const FooterModal = ({ post, setPost }) => {
                 </div>
                 <div>
                     <button
-                        className="text-blue-inst font-bold text-sm rounded text-blue w-14 h-8"
+                        className="text-blue-500 border-2 text-sm font-bold text-sm rounded-xl text-blue w-14 h-8"
                         onClick={addComment}
                     >
                     Post

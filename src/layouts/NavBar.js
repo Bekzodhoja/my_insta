@@ -54,7 +54,7 @@ const NavBar = () => {
     return (
         <>
         <CreatePost open={open} setOpen={setOpen}/>
-        <div className="bg-white border-b h-16" ref={navbarRef} >
+        <div className="bg-white border-b h-20" ref={navbarRef} >
             <div className="flex items-center h-full justify-between container mx-auto max-w-screen-lg relative">
                 <div className="navbar-logo cursor-pointer"
                     onClick={() => navigate(HOME)}
@@ -124,7 +124,7 @@ const NavBar = () => {
                                 
                             </div>
                             <div
-                                className="mt-6 rounded-full cursor-pointer bg-gray-300 flex items-center justify-center w-8 h-8 relative select-none"
+                                className="mt-7 rounded-full border-2 border-rose-600 cursor-pointerflex items-center justify-center w-8 h-8 relative select-none"
                                 onClick={() => setDropdownOpen(prev => !prev)}
                             >
                                 <img

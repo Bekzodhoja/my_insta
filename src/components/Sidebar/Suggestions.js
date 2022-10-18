@@ -20,6 +20,9 @@ const Suggestions = ({ userId, following, loggedInUserDocId }) => {
         <Skeleton count={1} height={150}/>
     ) : profiles.length ? (
         <div className="rounded flex flex-col">
+                <div className="flex items-center my-3 w-full">
+                <div className="border-b-[1px] border-black h-0 w-full"></div>
+              </div>
             <div className="text-sm flex items-center align-items justify-between mb-2">
                 <p className="font-bold text-gray-base">
 

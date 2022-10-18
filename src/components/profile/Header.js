@@ -43,9 +43,9 @@ const Header = ({
 
     return (
         <div className="grid grid-cols-3 gap-4 justify-between mx-auto max-w-screen-lg">
-            <div className="container flex justify-center">
+            <div className="container  flex justify-center">
                 {avatarSrc ? (
-                    <div className='border-red-500 rounded-full p-4'> 
+                    <div className='rounded-full border-2 border-rose-600'> 
                      <img
                     className="p-[1.5px] border-red-500 m-4 rounded-full h-30 w-40 flex"
                     alt={`${profileUsername} profilePicture`}

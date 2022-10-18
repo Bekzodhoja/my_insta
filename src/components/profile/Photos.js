@@ -25,7 +25,7 @@ const Photos = ({ photos }) => {
                     photos.map((photo) => (
                         <div key={photo.docId}>
                             <div
-                                className="relative group"
+                                className="shadow-2xl relative group"
                                 onClick={() => showModalFn(photo)}
                                 >
                                 <img

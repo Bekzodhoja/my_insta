@@ -79,22 +79,26 @@ const UserPhotoModal = ({ showModal, setShowModal, photo }) => {
                     className="border-0 shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none"
 
                   >
-                    <div className="flex">
-                      <div>
-                        {photo.imageSrc ? (
-                          <img
-                          src={photo.imageSrc}
-                          alt={""}
-                        />
-                        ) : (
-                          <Skeleton count={1} height={750} width={540}/>
-                        )}
+                    <div >
+                      <div className=" p-60 border items justify-center" style={{height: 400, width:600}} >
+                        <div className="flex justify-center">
+                          <div className="flex justify-center">
+                          {photo.imageSrc ? (
+                         
+                         <img
+                         src={photo.imageSrc}
+                         alt={""} class="image"
+                       />
+                       ) : (
+                         <Skeleton count={1} height={750} width={540}/>
+                       )}
+                          </div>
+                       
+                        </div>
+                    
 
                       </div>
-                      <div className="px-4 py-2 relative"
-                        style={{width: "600px"}}
-                      >
-                        <div className="flex flex-col">
+                      <div className="flex flex-col">
                             <div className="flex justify-between items-center pb-2 mt-1 border-b">
                                 <div className="flex items-center">
                                     <div className="w-8 h-8">
@@ -120,12 +124,16 @@ const UserPhotoModal = ({ showModal, setShowModal, photo }) => {
                                   </div>
                                 </div>
                             </div>
+                      <div className="w-92 p-60 flex flex-col justify-between"
+                        style={{width: "500px" }}
+                      >
+                     
                             <div className="mt-2 overflow-auto max-h-96">
                               {post && (
                                 <UserPhotoModalComments photo={post} setShowModal={setShowModal}/>
                               )}
                             </div>
-                            <div className="w-full absolute bottom-0 left-0">
+                            <div className=" w-full absolute bottom-0 left-0">
                               {post && (
                                 <FooterModal post={post} setPost={setPost}/>
                               )}
@@ -144,3 +152,4 @@ const UserPhotoModal = ({ showModal, setShowModal, photo }) => {
 }
 
 export default UserPhotoModal;
+

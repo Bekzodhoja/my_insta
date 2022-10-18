@@ -96,28 +96,28 @@ const EditUserPage = () => {
                 openInput={openInput}
                 userId={user.uid}
             />
-            <div className="border flex flex-col p-4 rounded">
+            <div className="border-2xl shadow-2xl flex mt-60  flex-col p-4 rounded">
                 <div className="flex items-center mt-4 mb-4 justify-end">
                     <div className="flex-auto flex w-32 cursor-pointer flex justify-end">
                         <div className="w-14 h-14 flex mr-2">
                             <img
-                                className="rounded-full w-full h-full flex"
+                                className="rounded-full border-2 border-rose-600 p-0.5 w-full h-full flex"
                                 src={currentUser.avatarSrc}
                                 alt={""}
                             />
                         </div>
                     </div>
-                    <div className="flex-auto w-60 ml-4">
+                    <div className="mb-2 flex-auto w-60 ml-4">
                         <div>
-                            <span className="text-xl">
+                            <span className="mb-2 text-xl">
                                 { user.displayName }
                             </span>
                         </div>
                         <div
                             onClick={openChangeAvatarInput}
-                            className="cursor-pointer"
+                            className="mt-4 cursor-pointer"
                         >
-                            <span className="text-base font-semibold text-blue-inst">
+                            <span className="  bg-blue-500  rounded-xl p-2 font-bold text-white">
                                 Upload image
                             </span>
                             <input
@@ -129,7 +129,10 @@ const EditUserPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex">
+                <div className="flex items-center my-3 w-full">
+                <div className="border-b-[1px] border-black h-0 w-full"></div>
+              </div>
+                <div className="flex ">
                     <div className="flex-auto w-32 flex justify-end pr-6">
                         <label htmlFor="fullname">Full Name</label>
                     </div>
@@ -192,13 +195,13 @@ const EditUserPage = () => {
                     <div className="flex-auto w-60 ...">
                         { !loading ? (
                             <button
-                                className="bg-blue-inst font-bold text-sm rounded text-white w-20 h-8"
+                                className="bg-blue-500 font-bold text-sm rounded-xl text-white w-20 h-8"
                                 onClick={updateProfile}
                             >
                                 Submit
                             </button>
                         ) : (
-                            <button className="bg-blue-inst font-bold text-sm rounded text-white w-20 h-8 opacity-70">
+                            <button className="font-bold text-sm rounded text-white w-20 h-8 opacity-70">
                                 <div className="flex items-center justify-center">
                                     <ReactLoading type="spin" color={"black"} height={'30%'} width={'30%'}/>
                                 </div>

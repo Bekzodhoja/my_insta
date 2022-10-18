@@ -42,7 +42,7 @@ const SignUp = () => {
                         followers: [],
                         dataCreated: Date.now(),
                         aboutMe: "",
-                        avatarSrc: "https://media.istockphoto.com/vectors/user-avatar-profile-icon-black-vector-illustration-vector-id1209654046?k=20&m=1209654046&s=170667a&w=0&h=BBXhuO36-UfqMS5aYkYvqjAuz3bO1GW-wiXGqRD1Sng="
+                        avatarSrc: "https://parkridgevet.com.au/wp-content/uploads/2020/11/Profile-300x300.png"
                     });
 
                     navigate(HOME);
