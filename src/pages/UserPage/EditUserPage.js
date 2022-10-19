@@ -129,60 +129,67 @@ const EditUserPage = () => {
                         </div>
                     </div>
                 </div>
+                
                 <div className="flex items-center my-3 w-full">
                 <div className="border-b-[1px] border-black h-0 w-full"></div>
               </div>
+              <span>Full Name</span>
                 <div className="flex ">
-                    <div className="flex-auto w-32 flex justify-end pr-6">
-                        <label htmlFor="fullname">Full Name</label>
+                    <div className="fflex-auto flex">
+                        <label htmlFor="fullname"></label>
                     </div>
-                    <div className="flex-auto w-60 ">
+                    <div className="flex-auto w-full">
                         <input
                             value={fullname}
                             onChange={e => setFullname(e.target.value)}
-                            className="border rounded w-full px-1"
+                            className="h-10 border p-2 rounded w-full "
                             type="text"
                             id="fullname"
                         />
                     </div>
                 </div>
-                <div className="flex mt-6">
-                    <div className="flex-auto w-32 flex justify-end pr-6">
-                        <label htmlFor="username">User Name</label>
+                <span className="mt-4">User Name</span>
+                <div className="flex">
+                    <div className="flex-auto flex ">
+                        <label htmlFor="username"></label>
                     </div>
-                    <div className="flex-auto w-60 ...">
+                    <div className="flex-auto w-full">
                         <input
                             value={username}
                             onChange={e => setUsername(e.target.value)}
-                            className="border rounded w-full px-1"
+                            className="h-10 border p-2 rounded w-full "
                             type="text"
                             id="username"
                         />
                     </div>
                 </div>
-                <div className="flex mt-6">
-                    <div className="flex-auto w-32 flex justify-end pr-6">
-                        <label htmlFor="email">Email</label>
+                <span className="mt-4" >Emailk</span>
+                <div className="flex">
+                    <div className="flex-auto flex ">
+                       
+                        <label htmlFor="email"></label>
                     </div>
-                    <div className="flex-auto w-60 ...">
+                    
+                    <div className=" flex-auto w-full ">
                         <input
                             value={email}
                             onChange={e => setEmail(e.target.value)}
-                            className="border rounded w-full px-1"
+                            className="h-10 border p-2 rounded w-full "
                             type="text"
                             id="email"
                         />
                     </div>
                 </div>
-                <div className="flex mt-6">
-                    <div className="flex-auto w-32 flex justify-end pr-6">
-                        <label htmlFor="newpassword">New Password</label>
+                <span className="mt-4">New Password</span>
+                <div className="flex  ">
+                    <div className="flex-auto flex ">
+                        <label htmlFor="newpassword"></label>
                     </div>
-                    <div className="flex-auto w-60 ...">
+                    <div className="flex-auto w-full">
                         <input
                             value={password}
                             onChange={e => setPassword(e.target.value)}
-                            className="border rounded w-full px-1"
+                            className="h-10 border p-2 rounded w-full"
                             autoComplete="off"
                             type="password"
                             id="newpassword"
@@ -201,9 +208,9 @@ const EditUserPage = () => {
                                 Submit
                             </button>
                         ) : (
-                            <button className="font-bold text-sm rounded text-white w-20 h-8 opacity-70">
+                            <button className="font-bold text-sm rounded text-white w-30 h-20 opacity-70">
                                 <div className="flex items-center justify-center">
-                                    <ReactLoading type="spin" color={"black"} height={'30%'} width={'30%'}/>
+                                    <ReactLoading type="spin" color={"black"} height={'40%'} width={'30%'}/>
                                 </div>
                             </button>
                         )}
