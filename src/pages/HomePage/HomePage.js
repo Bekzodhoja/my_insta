@@ -17,5 +17,5 @@ const HomePage = () => {
         </div>
     );
 };
-//goodjob
+
 export default HomePage;
