@@ -47,7 +47,7 @@ const Header = ({
                 {avatarSrc ? (
                     <div className='rounded-full border-2 border-rose-600'> 
                      <img
-                    className="p-[1.5px] border-red-500 m-4 rounded-full h-30 w-40 flex"
+                    className="p-[1px] border-red-500 m-1 rounded-full h-30 w-40 flex"
                     alt={`${profileUsername} profilePicture`}
                     src={avatarSrc}
                     />
